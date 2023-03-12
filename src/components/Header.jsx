@@ -4,8 +4,8 @@ function Header() {
       <div className="header-left">
         <img width={40} height={40} src="img/logo.png" alt="Logotype" />
         <div>
-          <h3>React Sneakers</h3>
-          <p>Магазин лучших кроссовок</p>
+          <h3>Sneakers</h3>
+          <p>Интернет-магазин кроссовок</p>
         </div>
       </div>
 
