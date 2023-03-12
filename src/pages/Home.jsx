@@ -1,68 +1,43 @@
-import Card from "../components/Card";
+// import { useEffect, useState } from "react";
+// import Card from "../components/Card";
 
-const cardData = [
-  {
-    name: "Мужские Кроссовки Nike Air Max 270",
-    price: 210,
-    image: "/img/goods/2.jpg",
-  },
-  {
-    name: "Мужские Кроссовки Nike Blazer Mid Suede",
-    price: 210,
-    image: "/img/goods/3.jpg",
-  },
-  {
-    name: "Кроссовки Puma X Aka Boku Future Rider",
-    price: 210,
-    image: "/img/goods/4.jpg",
-  },
-  {
-    name: "Мужские Кроссовки Under Armour Curry 8",
-    price: 210,
-    image: "/img/goods/5.jpg",
-  },
-  {
-    name: "Мужские Кроссовки Nike Kyrie 7",
-    price: 210,
-    image: "/img/goods/6.jpg",
-  },
-];
+// function Home({ onAddToCart }) {
+//   const [cardData, setCardData] = useState([]);
 
-const onClickBtn = () => {
-  alert("kll");
-};
+//   useEffect(() => {
+//     fetch("https://640e0588b07afc3b0dbcf7b0.mockapi.io/items")
+//       .then((res) => {
+//         return res.json();
+//       })
+//       .then((json) => {
+//         setCardData(json);
+//       });
+//   }, []);
 
-function Home() {
-  return (
-    <div className="content">
-      <div className="content-header">
-        <h1>Все кроссовки</h1>
-        <div className="search-block">
-          <img src="img/search.svg" alt="Search" />
+//   return (
+//     <div className="content">
+//       <div className="content-header">
+//         <h1>Все кроссовки</h1>
+//         <div className="search-block">
+//           <img src="img/search.svg" alt="Search" />
 
-          <img src="img/btn-remove.svg" alt="Clear" />
+//           <img src="img/btn-remove.svg" alt="Clear" />
 
-          <input placeholder="Поиск..." />
-        </div>
-      </div>
-      <div className="content-cards">
-        {cardData.map((card) => (
-          <Card
-            title={card.name}
-            price={card.price}
-            image={card.image}
-            onClickPlus={onClickBtn}
-          />
-        ))}
+//           <input placeholder="Поиск..." />
+//         </div>
+//       </div>
+//       <div className="content-cards">
+//         {cardData.map((card) => (
+//           <Card
+//             title={card.name}
+//             price={card.price}
+//             image={card.image}
+//             onAdd={(item) => onAddToCart(item)}
+//           />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
 
-        {/* <Card
-          title="Мужские Кроссовки Nike Blazer Mid Suede"
-          price={210}
-          image="/img/goods/3.jpg"
-        /> */}
-      </div>
-    </div>
-  );
-}
-
-export default Home;
+// export default Home;
